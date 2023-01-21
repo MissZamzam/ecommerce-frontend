@@ -222,6 +222,76 @@ section{
     margin:2rem;
 }
 
+
+
+
+
+.cart-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    position:fixed;
+    top:0; right:-105%;
+    z-index: 10000;
+    height:100%;
+    width:100%;
+}
+
+.cart-container.active{
+    right:0;
+}
+
+.cartContainer .cart-container{
+    background:#fff;
+    border:var(--border);
+    width:40rem;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem;
+}
+
+
+.cart-container .cart-title{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    text-align: center;
+}
+
+
+.cart-container #close-cart-btn{
+    position: absolute;
+    top:1.5rem; right:2.5rem;
+    font-size: 5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#form{
+    background:#fff;
+    border:var(--border);
+    width:40rem;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem;
+}
+
 .login-form-container form h3{
     font-size: 2.5rem;
     text-transform: uppercase;

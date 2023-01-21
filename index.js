@@ -5,6 +5,8 @@ document.querySelector('#search-btn').onclick = () =>{
 }
 
 let loginForm = document.querySelector('.login-form-container');
+let cartItem = document.querySelector('.cart-container');
+
 
 document.querySelector('#login-btn').onclick = () =>{
   loginForm.classList.toggle('active');
@@ -13,6 +15,31 @@ document.querySelector('#login-btn').onclick = () =>{
 document.querySelector('#close-login-btn').onclick = () =>{
   loginForm.classList.remove('active');
 }
+
+
+let cardCard = document.querySelector('.cart-container');
+
+document.querySelector('#cartBtn').onclick = () =>{
+  cartItem.classList.toggle('active');
+}
+
+document.querySelector('#close-cart-btn').onclick = () =>{
+  cartItem.classList.remove('active');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 window.onscroll = () =>{
 
